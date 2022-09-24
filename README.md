@@ -7,11 +7,15 @@
 ## Current predictions (updated 09/24)
 
 **House of Representatives**
+
 Republicans win 55 in 100.
+
 Median outcome: 219R—216D
 
 **Senate**
+
 Democrats win 79 in 100.
+
 Median outcome: 51D—49R
 
 ## Methodology
