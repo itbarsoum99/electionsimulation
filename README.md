@@ -7,7 +7,7 @@
 ## Methodology
 
 ### Elections
-* Simulates each of 435 seats in the House and each of 35 Class III seats in the Senate.
+Simulates each of 435 seats in the House and each of 35 Class III seats in the Senate.
 
 <blockquote>districtPVI + (baseNEnv ± historicalAdj ± enthusiasmAdj ± errorAdj) ± incumbencyAdvantage = election result</blockquote>
 
