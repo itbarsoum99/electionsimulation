@@ -11,7 +11,6 @@ Simulates each of 435 seats in the House and each of 35 Class III seats in the S
 
 <code>districtPVI + (baseNEnv ± historicalAdj ± enthusiasmAdj ± errorAdj) ± incumbencyAdvantage = election result</code>
 
-<small>In the Senate, individual race polls are also taken into account.</small>
 
 The district PVI (<code>districtPVI</code>) is sourced from [the Cook Political Report](https://www.cookpolitical.com/cook-pvi/2022-partisan-voting-index/district-map-and-list).
 
@@ -24,6 +23,9 @@ The enthusiasm adjustment (<code>enthusiasmAdj</code>) is equivalent to a random
 The error adjustment (<code>errorAdj</code>) assumes that the national environment could vary by up to 50% in either direction.
 
 The incumbency advantage (<code>incumbencyAdvantage</code>) is [based on 2018 data from hundreds of races](https://fivethirtyeight.com/features/how-much-was-incumbency-worth-in-2018/).
+
+
+*In the Senate, individual race polls are also taken into account.*
 
 ### Simulation
 * Python is used to introduce randomness
