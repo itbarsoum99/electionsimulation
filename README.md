@@ -4,6 +4,16 @@
 * This project consists of a very basic election simulation model written in python.
 * I'm an amateur data analyst, political scientist, and computer scientist and I have absolutely no expertise whatsoever, so don't bet all your money on my model.
 
+## Current predictions (updated 09/24)
+
+**House of Representatives**
+Republicans win 55 in 100.
+Median outcome: 219R—216D
+
+**Senate**
+Democrats win 79 in 100.
+Median outcome: 51D—49R
+
 ## Methodology
 
 ### Elections
@@ -28,7 +38,6 @@ The incumbency advantage (<code>incumbencyAdvantage</code>) is [based on 2018 da
 *In the Senate, individual race polls are also taken into account.*
 
 ### Simulation
-* Python is used to introduce randomness
-* Results are simulated 40,000 times and the averages are used
+Results are simulated 40,000 times and the averages are used.
 
 
