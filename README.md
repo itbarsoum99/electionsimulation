@@ -35,7 +35,7 @@ The historical adjustment (<code>historicalAdj</code>) is based on inaccuracies 
 
 The enthusiasm adjustment (<code>enthusiasmAdj</code>) is equivalent to a randomly selected number in a range between half of the margin in each party's best [voter enthusiasm poll](https://morningconsult.com/2022-midterm-elections-tracker/) during the previous month.
 
-The error adjustment (<code>errorAdj</code>) assumes that the national environment could vary by up to 50% in either direction.
+The error adjustment (<code>errorAdj</code>) assumes that the base national environment could vary by up to 50% in either direction.
 
 The incumbency advantage (<code>incumbencyAdvantage</code>) is [based on 2018 data from hundreds of races](https://fivethirtyeight.com/features/how-much-was-incumbency-worth-in-2018/).
 
