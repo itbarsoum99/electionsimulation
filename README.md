@@ -1,8 +1,9 @@
 # 2022 Midterm Simulation Model
 
 ## Background
-* This project consists of a very basic election simulation model written in python.
-* I'm an amateur data analyst, political scientist, and computer scientist and I have absolutely no expertise whatsoever, so don't bet all your money on my model.
+This project consists of a very basic election simulation model written in python.
+
+I'm an amateur data analyst, amateur political scientist, and amateur computer scientist and I have absolutely no expertise whatsoever, so don't bet all your money on my model.
 
 ## Current predictions (updated 09/24)
 
