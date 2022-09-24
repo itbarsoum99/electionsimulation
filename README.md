@@ -9,7 +9,7 @@
 ### Elections
 Simulates each of 435 seats in the House and each of 35 Class III seats in the Senate.
 
-<blockquote>districtPVI + (baseNEnv ± historicalAdj ± enthusiasmAdj ± errorAdj) ± incumbencyAdvantage = election result</blockquote>
+<code>districtPVI + (baseNEnv ± historicalAdj ± enthusiasmAdj ± errorAdj) ± incumbencyAdvantage = election result</code>
 
 <small>In the Senate, individual race polls are also taken into account.</small>
 
