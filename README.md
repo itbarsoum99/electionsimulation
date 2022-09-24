@@ -1,6 +1,6 @@
 # 2022 Midterm Simulation Model
 
-## Background
+## Background and disclaimer
 This project consists of a very basic election simulation model written in python.
 
 I'm an amateur data analyst, amateur political scientist, and amateur computer scientist and I have absolutely no expertise whatsoever, so don't bet all your money on my model.
@@ -45,4 +45,6 @@ The incumbency advantage (<code>incumbencyAdvantage</code>) is [based on 2018 da
 ### Simulation
 Results are simulated 40,000 times and the averages are used.
 
+___
 
+2022 Midterm Elections Model © 2022 by Isaac Barsoum is licensed under CC BY-NC-SA 4.0
