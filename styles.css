@@ -71,7 +71,8 @@ legend {
   padding: 0px 15px;
   background: #7cc0cd;
   font-size: 1.2em;
-
+  color: #e1e1e1;
+  font-weight: 700;
 }
 
 .model fieldset h2 {
