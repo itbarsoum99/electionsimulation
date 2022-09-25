@@ -31,7 +31,7 @@ The district PVI (<code>districtPVI</code>) is sourced from [the Cook Political 
 
 The base national environment (<code>baseNEnv</code>) is from [FiveThirtyEight's generic ballot polling average](https://projects.fivethirtyeight.com/polls/generic-ballot/).
 
-The historical adjustment (<code>hAdj</code>) is based on inaccuracies from 2018 polling compared to the final results.
+The historical adjustment (<code>hAdj</code>) is based on [inaccuracies from 2018 polling](https://projects.fivethirtyeight.com/polls/generic-ballot/2018/) compared to the final results.
 
 The enthusiasm adjustment (<code>eAdj</code>) is equivalent to a randomly selected number in a range between half of the margin in each party's best [voter enthusiasm poll](https://morningconsult.com/2022-midterm-elections-tracker/) during the previous month.
 
