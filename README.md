@@ -47,6 +47,10 @@ The swing adjustment (<code>swingAdj</code>) assumes that any given election cou
 ### Simulation
 Results are simulated 500,000 times and the averages are used.
 
+## Changelog
+<code>Saturday, September 24, 2022:</code> Model launched with initial simulations
+
+<code>Sunday, September 25, 2022:</code> Incorporated <code>swingAdj</code> in House races
 ___
 
 2022 Midterm Elections Model © 2022 by Isaac Barsoum is licensed under CC BY-NC-SA 4.0
