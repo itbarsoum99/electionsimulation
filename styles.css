@@ -74,6 +74,14 @@ legend {
 
 }
 
+.model fieldset h2 {
+  margin-block-end: 0;
+}
+
+.model fieldset h3 {
+  margin-block-start: 0;
+}
+
 .methodology {
   background-color: #1c2b4a;
   color: #e1e1e1;
@@ -88,6 +96,7 @@ legend {
 #methodology-title  {
   padding: 3vh 2vw 0vh 2vw;
   margin-block-end: 0;
+  text-align: center;
 }
 
 .methodology fieldset {
