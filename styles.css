@@ -48,7 +48,6 @@ blueu {
 
 header {
   min-height: 50vh;
-  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -142,6 +141,6 @@ legend {
     padding: 0 5em;
   }
   .methodology fieldset {
-   // margin: 1em 2vw;
+    margin: 1em 2vw;
   }
 }
