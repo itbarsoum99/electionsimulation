@@ -54,7 +54,7 @@ def simulate(env):
   
   numSeats = []
   
-  i = 100000 
+  i = 500000 
 
   for x in range(i):
     result = election(env)
@@ -66,7 +66,11 @@ def simulate(env):
   average = int(sum(numSeats)/(i))
   numSeats.sort()
   median = numSeats[int(i/2)]
+  min = numSeats[0]
+  max = numSeats[i-1]
   mode = statistics.mode(numSeats)
+  bottom = numSeats[int(0.1 * i)]
+  top = numSeats[int(i-(0.1*i)-1)]
 
   print("S̲e̲n̲a̲t̲e̲")
   print("Democrats win " + str(int((demWins/(i/100)) + 0.5)) + " in 100 times")
@@ -74,6 +78,10 @@ def simulate(env):
   print("Average seats: " + str(average) + "D—" + str(100-average) + "R")
   print("Median seats: " + str(median) + "D—" + str(100-median) + "R")
   print("Mode seats: " + str(mode) + "D—" + str(100-mode) + "R")
+  print("Minimum seats: " + str(min) + "D—" + str(100-min) + "R")
+  print("Maximum seats: " + str(max) + "D—" + str(100-max) + "R")
+  print("Top bound: " + str(top) + "D—" + str(100-top) + "R")
+  print("Bottom bound: " + str(bottom) + "D—" + str(100-bottom) + "R")
 
 simulate(baseNationalEnvironment)
 

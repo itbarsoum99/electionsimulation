@@ -23,8 +23,8 @@ class bcolors:
     UNDERLINE = '\033[4m'
 
 def simNatlEnv(baseEnv):
-  marginOfError = 0.5 * baseEnv 
-  errorAdj = random.uniform(-marginOfError, marginOfError)
+  error = 0.5 * baseEnv
+  errorAdj = random.uniform(-error, error)
 
   historicalAdj = random.uniform(-0.2, 0.2)
   
@@ -52,7 +52,7 @@ def simulate(env):
   
   numSeats = []
   
-  i = 40000 
+  i = 500000 
 
   for x in range(i):
     result = election(env)
@@ -65,11 +65,20 @@ def simulate(env):
   numSeats.sort()
   median = numSeats[int(i/2)]
   mode = statistics.mode(numSeats)
+  min = numSeats[0]
+  max = numSeats[i-1]
+  bottom = numSeats[int(0.1*i)]
+  top = numSeats[int(i-(0.1*i)-1)]
+
   print("H̲o̲u̲s̲e̲")
-  print("Democrats win " + str(int((demWins/400) + 0.5)) + " in 100 times")
-  print("Republicans win " + str(int((gopWins/400) + 0.5)) + " in 100 times")
+  print("Democrats win " + str(int((demWins/(i/100)) + 0.5)) + " in 100 times")
+  print("Republicans win " + str(int((gopWins/(i/100)) + 0.5)) + " in 100 times")
   print("Average seats: " + str(average) + "D—" + str(435-average) + "R")
   print("Median seats: " + str(median) + "D—" + str(435-median) + "R")
   print("Mode seats: " + str(mode) + "D—" + str(435-mode) + "R") 
+  print("Minimum seats: " + str(min) + "D—" + str(435-min) + "R") 
+  print("Maximum seats: " + str(max) + "D—" + str(435-max) + "R") 
+  print("Top bound: " + str(top) + "D—" + str(435-top) + "R") 
+  print("Bottom bound: " + str(bottom) + "D—" + str(435-bottom) + "R") 
 
 simulate(baseNationalEnvironment)

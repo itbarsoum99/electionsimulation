@@ -43,7 +43,7 @@ The incumbency advantage (<code>incumbencyAdv</code>) is [based on 2018 data fro
 *In the Senate, individual race polls are also taken into account.*
 
 ### Simulation
-Results are simulated 40,000 times and the averages are used.
+Results are simulated 500,000 times and the averages are used.
 
 ___
 
