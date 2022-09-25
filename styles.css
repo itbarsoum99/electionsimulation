@@ -143,4 +143,7 @@ legend {
   .methodology fieldset {
     margin: 1em 2vw;
   }
+  .methodology {
+    padding-bottom: 3vh;
+  }
 }
