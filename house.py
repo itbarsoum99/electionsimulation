@@ -38,7 +38,8 @@ def election(baseEnvironment):
   nationalEnvironment = simNatlEnv(baseEnvironment)
   demSeats = 0;
   for x in pvi:
-    race = x + nationalEnvironment
+    swingAdj = random.uniform(-5.0, 5.0)
+    race = x + nationalEnvironment + swingAdj 
     if race == 0:
       race = random.choice([-1, 1])
       print("coin flipped.")
@@ -52,7 +53,7 @@ def simulate(env):
   
   numSeats = []
   
-  i = 500000 
+  i = 100000 
 
   for x in range(i):
     result = election(env)

@@ -9,9 +9,9 @@ I'm an amateur data analyst, amateur political scientist, and amateur computer s
 
 **House of Representatives**
 
-Republicans win 55 in 100.
+Republicans win 64 in 100.
 
-Median outcome: 219R—216D
+Median outcome: 221R—214D
 
 **Senate**
 
@@ -24,10 +24,12 @@ Median outcome: 51D—49R
 ### Elections
 Simulates each of 435 seats in the House and each of 35 Class III seats in the Senate.
 
-<pre>districtPVI + (baseNEnv ± hAdj ± eAdj ± errorAdj) ± incumbencyAdv = election result</pre>
+<pre>districtPVI + (baseNEnv ± hAdj ± eAdj ± errorAdj) ± incumbencyAdv + swingAdj = election result</pre>
 
 
 The district PVI (<code>districtPVI</code>) is sourced from [the Cook Political Report](https://www.cookpolitical.com/cook-pvi/2022-partisan-voting-index/district-map-and-list).
+
+*In the Senate, individual race polls are also taken into account.*
 
 The base national environment (<code>baseNEnv</code>) is from [FiveThirtyEight's generic ballot polling average](https://projects.fivethirtyeight.com/polls/generic-ballot/).
 
@@ -39,8 +41,8 @@ The error adjustment (<code>errorAdj</code>) assumes that the base national envi
 
 The incumbency advantage (<code>incumbencyAdv</code>) is [based on 2018 data from hundreds of races](https://fivethirtyeight.com/features/how-much-was-incumbency-worth-in-2018/).
 
+The swing adjustment (<code>swingAdj</code>) assumes that any given election could swing up to 5 points in either direction. (*In Senate races, where race polls are taken into account, it assumes a [1.1-point bias in favor of Democrats.](https://fivethirtyeight.com/features/will-the-polls-overestimate-democrats-again/)*)
 
-*In the Senate, individual race polls are also taken into account.*
 
 ### Simulation
 Results are simulated 500,000 times and the averages are used.
