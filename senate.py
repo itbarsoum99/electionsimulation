@@ -69,8 +69,8 @@ def simulate(env):
   mode = statistics.mode(numSeats)
 
   print("S̲e̲n̲a̲t̲e̲")
-  print(bcolors.OKBLUE + "Democrats win " + str(int((demWins/(i/100)) + 0.5)) + " in 100 times" + bcolors.ENDC)
-  print(bcolors.WARNING + "Republicans win " + str(int((gopWins/(i/100)) + 0.5)) + " in 100 times" + bcolors.ENDC)
+  print("Democrats win " + str(int((demWins/(i/100)) + 0.5)) + " in 100 times")
+  print("Republicans win " + str(int((gopWins/(i/100)) + 0.5)) + " in 100 times")
   print("Average seats: " + str(average) + "D—" + str(100-average) + "R")
   print("Median seats: " + str(median) + "D—" + str(100-median) + "R")
   print("Mode seats: " + str(mode) + "D—" + str(100-mode) + "R")
