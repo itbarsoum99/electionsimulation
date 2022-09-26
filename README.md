@@ -5,7 +5,7 @@ This project consists of a very basic election simulation model written in pytho
 
 I'm an amateur data analyst, amateur political scientist, and amateur computer scientist and I have absolutely no expertise whatsoever, so don't bet all your money on my model.
 
-## Current predictions (updated 09/24)
+## Current predictions (updated 09/25)
 
 **House of Representatives**
 
