@@ -45,7 +45,7 @@ The swing adjustment (<code>swingAdj</code>) assumes that any given election cou
 
 
 ### Simulation
-Results are simulated 500,000 times and the averages are used.
+Results are simulated 100,000 times and the averages are used.
 
 ## Changelog
 **Saturday, September 24, 2022:** Model launched with initial simulations
