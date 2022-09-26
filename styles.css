@@ -133,6 +133,11 @@ legend {
   .methodology-flex h2 {
     margin-block: 0;
   }
+  header {
+    text-align: center;
+    padding: 0 5em;
+  }
+
 }
 
 @media (pointer: coarse) {
