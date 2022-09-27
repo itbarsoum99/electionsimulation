@@ -249,6 +249,7 @@ a {
     width: 75vw;
     min-height: initial;
     height: fit-content !important;
+    padding: 2em;
   }
 
   .graph-container img {
