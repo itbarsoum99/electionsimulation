@@ -247,6 +247,7 @@ a {
   }
   .graph-container {
     width: 75vw;
+    min-height: initial;
     height: fit-content !important;
   }
 
