@@ -247,7 +247,7 @@ a {
   }
   .graph-container {
     width: 75vw;
-    height: auto;
+    height: fit-content !important;
   }
 
   .graph-container img {
@@ -255,6 +255,7 @@ a {
    }
    table td {
     font-size: 2em;
+    padding: 1.7em;
   }
 
 }
