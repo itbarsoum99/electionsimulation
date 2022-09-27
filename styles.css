@@ -97,7 +97,7 @@ legend {
 
 .methodology-flex {
   display: flex;
-
+  max-width: 100vw;
   align-items: center;
 }
 
@@ -155,6 +155,7 @@ legend {
 .graph-container img {
   border: 1px solid #1c2b4a;
   width: fit-container;
+  margin-bottom: 5px;
 }
 
 .graph-container h2 {
