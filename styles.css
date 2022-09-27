@@ -40,10 +40,15 @@ redu {
   text-decoration-color: #b02d27;
 }
 
+h2 redu, h2 blueu {
+  text-decoration-thickness: 5px;
+}
+
 blueu {
   text-decoration: underline;
   text-decoration-thickness: 3px;
-  text-decoration-color: #274265;
+  /* text-decoration-color: #274265; */
+  text-decoration-color: #3e92a3;
 }
 
 header {
@@ -117,8 +122,81 @@ legend {
   min-width: 23vw;
 }
 
+
+
 .methodology fieldset:nth-of-type(3) {
   min-width: 10vw;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  flex-wrap: wrap;
+}
+
+.graph-container {
+  background-color: #e1e1e1;
+  width: 40vw;
+  min-height: 65vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 8px 8px 6px #c1c1c1;
+  color: #1c2b4a;
+  padding: 1.2em;
+  margin: 1.2em;
+}
+
+.graph-container img {
+  border: 1px solid #1c2b4a;
+  width: fit-container;
+}
+
+.graph-container h2 {
+  text-decoration: underline;
+  text-decoration-thickness: 5px;
+  text-decoration-color: #b02d27;
+  margin-block-start: 0;
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+
+table td {
+  border: 1px solid #1c2b4a;
+  padding: 2em;
+  text-align: center;
+}
+
+table .firsttd {
+  font-weight: 700;
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+.model fieldset {
+  transition: 0.3s;
+}
+
+.model fieldset:hover {
+  background-color: #57aebf;
+}
+
+.model fieldset legend {
+  transition: 0.3s;
+}
+
+.model fieldset:hover legend {
+  background-color: #57aebf;
 }
 
 @media (max-width: 1430px) {
@@ -137,7 +215,23 @@ legend {
     text-align: center;
     padding: 0 5em;
   }
+   .graph-container img {
+    width: inherit;
+  }
+ 
 
+}
+
+@media (max-width: 1050px) {
+  .graph-container {
+    width: 75vw;
+  }
+}
+
+@media (max-width: 850px) {
+  .graph-container {
+    width: 80vw;
+  }
 }
 
 @media (pointer: coarse) {
@@ -151,4 +245,12 @@ legend {
   .methodology {
     padding-bottom: 3vh;
   }
+  .graph-container {
+    width: 75vw;
+  }
+
+  .graph-container img {
+    width: inherit;
+   }
+
 }
