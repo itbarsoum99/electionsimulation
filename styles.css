@@ -160,8 +160,13 @@ legend {
   text-decoration: underline;
   text-decoration-thickness: 5px;
   text-decoration-color: #b02d27;
-  margin-block-start: 0;
   text-align: center;
+}
+
+@media (pointer: fine) {
+  .graph-container h2 {
+    margin-block-start: 0;
+  }
 }
 
 table {
@@ -250,7 +255,7 @@ a {
     width: 75vw;
     min-height: initial;
     height: fit-content !important;
-    padding: 2em;
+    padding: 2.4em;
   }
 
   .graph-container img {
