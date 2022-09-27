@@ -52,6 +52,7 @@ Results are simulated 100,000 times and the averages are used.
 
 **Sunday, September 25, 2022:** Incorporated <code>swingAdj</code> in House races
 
+**Monday, September 26, 2022:** Website updated to provide more information 
 ___
 
 2022 Midterm Elections Model © 2022 by Isaac Barsoum is licensed under CC BY-NC-SA 4.0
