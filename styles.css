@@ -144,11 +144,12 @@ legend {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  box-shadow: 8px 8px 6px #c1c1c1;
   color: #1c2b4a;
   padding: 1.2em;
   margin: 1.2em;
   border-radius: 8px;
+  transition: 0.3s;
+  box-shadow: 8px 8px 6px #c1c1c1;
 }
 
 .graph-container img {
