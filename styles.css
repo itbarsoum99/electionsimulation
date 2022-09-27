@@ -261,7 +261,7 @@ a {
     padding: 1.7em;
   }
   td redu, td blueu {
-    text-decoration-thickness: 4px;
+    text-decoration-thickness: initial;
   }
 
 }
