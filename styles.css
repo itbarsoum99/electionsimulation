@@ -256,6 +256,9 @@ a {
   .graph-container img {
     width: inherit;
    }
+   .graph-container h2 {
+    font-size: 4em;
+  }
    table td {
     font-size: 2em;
     padding: 1.7em;
