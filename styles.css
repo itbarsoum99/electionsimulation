@@ -194,7 +194,7 @@ a {
   transition: 0.3s;
 }
 
-.model fieldset:hover {
+.model .link:hover {
   background-color: #57aebf;
 }
 
@@ -202,8 +202,12 @@ a {
   transition: 0.3s;
 }
 
-.model fieldset:hover legend {
+.model .link:hover legend {
   background-color: #57aebf;
+}
+
+.model fieldset img {
+  width: 30vw;
 }
 
 @media (max-width: 1430px) {
@@ -225,7 +229,9 @@ a {
    .graph-container img {
     width: inherit;
   }
- 
+ .model fieldset img {
+  width: 35vw;
+}
 
 }
 
@@ -233,12 +239,18 @@ a {
   .graph-container {
     width: 75vw;
   }
+.model fieldset img {
+  width: 50vw;
+}
 }
 
 @media (max-width: 850px) {
   .graph-container {
     width: 80vw;
   }
+.model fieldset img {
+  width: 30vw;
+}
 }
 
 @media (pointer: coarse) {
