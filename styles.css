@@ -247,10 +247,14 @@ a {
   }
   .graph-container {
     width: 75vw;
+    height: auto;
   }
 
   .graph-container img {
     width: inherit;
    }
+   table td {
+    font-size: 2em;
+  }
 
 }
