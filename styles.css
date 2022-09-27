@@ -260,5 +260,8 @@ a {
     font-size: 2em;
     padding: 1.7em;
   }
+  td redu, td blueu {
+    text-decoration-thickness: 4px;
+  }
 
 }
