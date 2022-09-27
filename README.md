@@ -31,7 +31,7 @@ The district PVI (<code>districtPVI</code>) is sourced from [the Cook Political 
 
 *In the Senate, individual race polls are also taken into account.*
 
-The base national environment (<code>baseNEnv</code>) is from [FiveThirtyEight's generic ballot polling average](https://projects.fivethirtyeight.com/polls/generic-ballot/).
+The base national environment (<code>baseNEnv</code>) is from [FiveThirtyEight's generic ballot polling average](https://projects.fivethirtyeight.com/polls/generic-ballot/). The linear regression model to predict the base national environment on Election Day is updated monthly (next update: 10/08/2022).
 
 The historical adjustment (<code>hAdj</code>) is based on [inaccuracies from 2018 polling](https://projects.fivethirtyeight.com/polls/generic-ballot/2018/) compared to the final results.
 
