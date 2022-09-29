@@ -6,7 +6,7 @@ This project consists of a very basic election simulation model written in pytho
 
 I'm an amateur data analyst, amateur political scientist, and amateur computer scientist and I have absolutely no expertise whatsoever, so don't bet all your money on my model.
 
-## Current predictions (updated 09/25)
+## Current predictions (updated 09/29)
 
 **House of Representatives**
 
@@ -16,7 +16,7 @@ Median outcome: 221R—214D
 
 **Senate**
 
-Democrats win 79 in 100.
+Democrats win 78 in 100.
 
 Median outcome: 51D—49R
 
@@ -56,6 +56,8 @@ Results are simulated 100,000 times and the averages are used.
 **Monday, September 26, 2022:** Website updated to provide more information 
 
 **Wednesday, September 28, 2022:** Added capability to simulate individual races
+
+**Thursday, September 29, 2022:** Slightly moved swing polling error adjustment to be R+1.27 instead of R+1.1
 ___
 
 2022 Midterm Elections Model © 2022 by Isaac Barsoum is licensed under CC BY-NC-SA 4.0
