@@ -55,7 +55,7 @@ Results are simulated 100,000 times and the averages are used.
 
 **Monday, September 26, 2022:** Website updated to provide more information 
 
-**Wednesday, September 28, 2022:** Added capability to simulate individual races.
+**Wednesday, September 28, 2022:** Added capability to simulate individual races
 ___
 
 2022 Midterm Elections Model © 2022 by Isaac Barsoum is licensed under CC BY-NC-SA 4.0
