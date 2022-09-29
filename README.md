@@ -1,7 +1,6 @@
 # 2022 Midterm Simulation Model
 
-## Background and disclaimer
-This project consists of a very basic election simulation model written in python.
+## Background and disclaimer This project consists of a very basic election simulation model written in python.
 
 I'm an amateur data analyst, amateur political scientist, and amateur computer scientist and I have absolutely no expertise whatsoever, so don't bet all your money on my model.
 
@@ -53,6 +52,8 @@ Results are simulated 100,000 times and the averages are used.
 **Sunday, September 25, 2022:** Incorporated <code>swingAdj</code> in House races
 
 **Monday, September 26, 2022:** Website updated to provide more information 
+
+**Wednesday, September 28, 2022:** Added capability to simulate individual races.
 ___
 
 2022 Midterm Elections Model © 2022 by Isaac Barsoum is licensed under CC BY-NC-SA 4.0
