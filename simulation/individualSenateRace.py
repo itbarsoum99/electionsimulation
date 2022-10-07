@@ -1,15 +1,14 @@
 import random
 import statistics 
 
-baseNationalEnvironment = 0.8 
+baseNationalEnvironment = 1.08 
 
-historicalAdj = 0.2
+historicalAdjustment = 0.8
 
-enthusiasmMax = 1.5 
+enthusiasmMax = 2.0 
 
-enthusiasmMin = -3.0
+enthusiasmMin = -2.0
 
-# pvi = [-15,-10.6,5.35,-18.6,15.6,9.15,9.6,-6,2.1,16.6,-20.6,9.6,-13.6,-9.25,-12.6,-18.6,-14.6,16.6,-10.7,2.45,6.75,12.6,-1.65,-22.6,-2.9,-22.6,-20,8.6,3.45,-10.6,-18.6,-15.6,16,12.1,-3.65]
 
 
 class bcolors:
@@ -27,7 +26,7 @@ def simNatlEnv(baseEnv):
   marginOfError = 0.5 * baseEnv
   errorAdj = random.uniform(-marginOfError, marginOfError) 
 
-  historicalAdj = random.uniform(-0.2, 0.2)
+  historicalAdj = random.uniform(-historicalAdjustment, historicalAdjustment)
   
   enthusiasmAdj = random.uniform(enthusiasmMin, enthusiasmMax)
 
@@ -38,7 +37,7 @@ def simNatlEnv(baseEnv):
 def election(baseEnvironment, x):
   nationalEnvironment = simNatlEnv(baseEnvironment)
   demSeats = 0;
-  swingAdj = random.uniform(-6.1, 5.0)
+  swingAdj = random.uniform(-6.27, 5.0)
   race = x + nationalEnvironment + swingAdj 
   if race == 0:
     race = random.choice([-1, 1])

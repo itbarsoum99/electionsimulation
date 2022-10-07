@@ -1,15 +1,16 @@
 import random
 import statistics 
 
-baseNationalEnvironment = 1.08 
+baseNationalEnvironment = 0.8 
 
-historicalAdjustment = 0.8
+historicalAdj = 0.2
 
-enthusiasmMax = 2.0 
+enthusiasmMax = 1.5 
 
-enthusiasmMin = -2.0
+enthusiasmMin = -3.0
 
-pvi = [-22.6,-22.6,-20.6,-20,-18.6,-18.6,-18.6,-15.6,-15,-14.6,-13.6,-12.6,-10.75,-10.6,-10.6,-10.15,-6.4,-4.55,-2.2,-1.85,3.05,1.4,2.3,4.6,7.1,8.6,9.25,13.45,9.6,11.4,18.25,15.6,16,16.6,16.6]
+pvi = [-15,-10.6,5.35,-18.6,15.6,9.15,9.6,-6,2.1,16.6,-20.6,9.6,-13.6,-9.25,-12.6,-18.6,-14.6,16.6,-10.7,2.45,6.75,12.6,-1.65,-22.6,-2.9,-22.6,-20,8.6,3.45,-10.6,-18.6,-15.6,16,12.1,-3.65]
+
 
 class bcolors:
     HEADER = '\033[95m'
@@ -26,7 +27,7 @@ def simNatlEnv(baseEnv):
   marginOfError = 0.5 * baseEnv
   errorAdj = random.uniform(-marginOfError, marginOfError) 
 
-  historicalAdj = random.uniform(-historicalAdjustment, historicalAdjustment)
+  historicalAdj = random.uniform(-0.2, 0.2)
   
   enthusiasmAdj = random.uniform(enthusiasmMin, enthusiasmMax)
 
@@ -82,7 +83,5 @@ def simulate(env):
   print("Maximum seats: " + str(max) + "D—" + str(100-max) + "R")
   print("Top bound: " + str(top) + "D—" + str(100-top) + "R")
   print("Bottom bound: " + str(bottom) + "D—" + str(100-bottom) + "R")
-  print(numSeats)
 
 simulate(baseNationalEnvironment)
-

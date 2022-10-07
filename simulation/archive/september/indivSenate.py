@@ -1,13 +1,13 @@
 import random
-import statistics
+import statistics 
 
-baseNationalEnvironment = 1.08 
+baseNationalEnvironment = 0.8 
 
-historicalAdjustment = 0.8
+historicalAdj = 0.2
 
-enthusiasmMax = 2.0 
+enthusiasmMax = 1.5 
 
-enthusiasmMin = -2.0
+enthusiasmMin = -3.0
 
 
 class bcolors:
@@ -22,10 +22,10 @@ class bcolors:
     UNDERLINE = '\033[4m'
 
 def simNatlEnv(baseEnv):
-  error = 0.5 * baseEnv
-  errorAdj = random.uniform(-error, error)
+  marginOfError = 0.5 * baseEnv
+  errorAdj = random.uniform(-marginOfError, marginOfError) 
 
-  historicalAdj = random.uniform(-historicalAdjustment, historicalAdjustment)
+  historicalAdj = random.uniform(-0.2, 0.2)
   
   enthusiasmAdj = random.uniform(enthusiasmMin, enthusiasmMax)
 
@@ -36,13 +36,14 @@ def simNatlEnv(baseEnv):
 def election(baseEnvironment, x):
   nationalEnvironment = simNatlEnv(baseEnvironment)
   demSeats = 0;
-  swingAdj = random.uniform(-5.0, 5.0)
+  swingAdj = random.uniform(-6.1, 5.0)
   race = x + nationalEnvironment + swingAdj 
   if race == 0:
     race = random.choice([-1, 1])
     print("coin flipped.")
   if race > 0:
     demSeats += 1
+
   return demSeats
 
 def simulate(env):
@@ -52,6 +53,7 @@ def simulate(env):
   numSeats = []
   
   i = 100000 
+
   pvi = float(input("PVI: "))
   for x in range(i):
     result = election(env, pvi)
@@ -61,8 +63,8 @@ def simulate(env):
     else:
       gopWins += 1
 
-  print("H̲o̲u̲s̲e̲")
-  print("Democrats win " + str(int((demWins/(i/100)) + 0.5)) + " in 100 times")
-  print("Republicans win " + str(int((gopWins/(i/100)) + 0.5)) + " in 100 times")
+  print("S̲e̲n̲a̲t̲e̲")
+  print("Democrat wins " + str(int((demWins/(i/100)) + 0.5)) + " in 100 times")
+  print("Republican wins " + str(int((gopWins/(i/100)) + 0.5)) + " in 100 times")
 
 simulate(baseNationalEnvironment)

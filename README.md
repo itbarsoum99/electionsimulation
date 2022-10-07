@@ -10,13 +10,13 @@ I'm an amateur data analyst, amateur political scientist, and amateur computer s
 
 **House of Representatives**
 
-Republicans win 64 in 100.
+Democrats win 59 in 100.
 
-Median outcome: 221R—214D
+Median outcome: 220D—215D
 
 **Senate**
 
-Democrats win 78 in 100.
+Democrats win 87 in 100.
 
 Median outcome: 51D—49R
 
@@ -58,6 +58,9 @@ Results are simulated 100,000 times and the averages are used.
 **Wednesday, September 28, 2022:** Added capability to simulate individual races
 
 **Thursday, September 29, 2022:** Slightly moved swing polling error adjustment to be R+1.27 instead of R+1.1
+
+**Friday, October 7, 2022:** Updated model with October data as Election Day approaches in a month (House 64R → 59D, Senate 78D → 87D)
+
 ___
 
 2022 Midterm Elections Model © 2022 by Isaac Barsoum is licensed under CC BY-NC-SA 4.0

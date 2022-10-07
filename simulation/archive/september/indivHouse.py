@@ -1,13 +1,13 @@
 import random
 import statistics
 
-baseNationalEnvironment = 1.08 
+baseNationalEnvironment = 0.8 
 
-historicalAdjustment = 0.8
+historicalAdj = 0.2
 
-enthusiasmMax = 2.0 
+enthusiasmMax = 1.5 
 
-enthusiasmMin = -2.0
+enthusiasmMin = -3.0
 
 
 class bcolors:
@@ -25,7 +25,7 @@ def simNatlEnv(baseEnv):
   error = 0.5 * baseEnv
   errorAdj = random.uniform(-error, error)
 
-  historicalAdj = random.uniform(-historicalAdjustment, historicalAdjustment)
+  historicalAdj = random.uniform(-0.2, 0.2)
   
   enthusiasmAdj = random.uniform(enthusiasmMin, enthusiasmMax)
 
@@ -65,4 +65,5 @@ def simulate(env):
   print("Democrats win " + str(int((demWins/(i/100)) + 0.5)) + " in 100 times")
   print("Republicans win " + str(int((gopWins/(i/100)) + 0.5)) + " in 100 times")
 
-simulate(baseNationalEnvironment)
+simulate(baseNationalEnvironment)￼
+￼

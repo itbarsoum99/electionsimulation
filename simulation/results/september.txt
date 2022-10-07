@@ -1,0 +1,21 @@
+H̲o̲u̲s̲e̲
+Democrats win 35 in 100 times
+Republicans win 65 in 100 times
+Average seats: 213D—222R
+Median seats: 214D—221R
+Mode seats: 214D—221R
+Minimum seats: 189D—246R
+Maximum seats: 237D—198R
+Top bound: 224D—211R
+Bottom bound: 203D—232R
+
+S̲e̲n̲a̲t̲e̲
+Democrats win 79 in 100 times
+Republicans win 21 in 100 times
+Average seats: 50D—50R
+Median seats: 51D—49R
+Mode seats: 51D—49R
+Minimum seats: 46D—54R
+Maximum seats: 55D—45R
+Top bound: 52D—48R
+Bottom bound: 49D—51R
