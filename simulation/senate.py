@@ -1,7 +1,7 @@
 import random
 import statistics 
 
-baseNationalEnvironment = 0.44 
+baseNationalEnvironment = -0.061 
 
 historicalAdjustment = 0.2
 
