@@ -6,19 +6,19 @@ This project consists of a very basic election simulation model written in pytho
 
 I'm an amateur data analyst, amateur political scientist, and amateur computer scientist and I have absolutely no expertise whatsoever, so don't bet all your money on my model.
 
-## Current predictions (updated 09/29)
+## Current predictions (updated 10/30)
 
 **House of Representatives**
 
-Democrats win 59 in 100.
+Republicans win 68 in 100.
 
-Median outcome: 220D—215D
+Median outcome: 210D—225R
 
 **Senate**
 
-Democrats win 87 in 100.
+Republicans win 53 in 100.
 
-Median outcome: 51D—49R
+Median outcome: 49D—51R
 
 ## Methodology
 
@@ -32,17 +32,17 @@ The district PVI (<code>districtPVI</code>) is sourced from [the Cook Political 
 
 *In the Senate, individual race polls are also taken into account.*
 
-The base national environment (<code>baseNEnv</code>) is from [FiveThirtyEight's generic ballot polling average](https://projects.fivethirtyeight.com/polls/generic-ballot/). The linear regression model to predict the base national environment on Election Day is updated monthly (next update: 10/08/2022).
+The base national environment (<code>baseNEnv</code>) is from [FiveThirtyEight's generic ballot polling average](https://projects.fivethirtyeight.com/polls/generic-ballot/). A third order polynomial line of best fit with a high Pearson correlation coefficient (<code>r<sup>2</sup>=0.85</code>) is used to extrapolate the national environment on Election Day.
 
 The historical adjustment (<code>hAdj</code>) is based on [inaccuracies from 2018 polling](https://projects.fivethirtyeight.com/polls/generic-ballot/2018/) compared to the final results.
 
-The enthusiasm adjustment (<code>eAdj</code>) is equivalent to a randomly selected number in a range between half of the margin in each party's best [voter enthusiasm poll](https://morningconsult.com/2022-midterm-elections-tracker/) during the previous month.
+The enthusiasm adjustment (<code>eAdj</code>) is equivalent to a randomly selected number in a range between half of the margin in each party's best [voter enthusiasm poll](https://morningconsult.com/2022-midterm-elections-tracker/) during the previous five months.
 
 The error adjustment (<code>errorAdj</code>) assumes that the base national environment could vary by up to 50% in either direction.
 
 The incumbency advantage (<code>incumbencyAdv</code>) is [based on 2018 data from hundreds of races](https://fivethirtyeight.com/features/how-much-was-incumbency-worth-in-2018/).
 
-The swing adjustment (<code>swingAdj</code>) assumes that any given election could swing up to 5 points in either direction. (*In Senate races, where race polls are taken into account, it assumes a [1.1-point bias in favor of Democrats.](https://fivethirtyeight.com/features/will-the-polls-overestimate-democrats-again/)*)
+The swing adjustment (<code>swingAdj</code>) assumes that any given election could swing up to 5 points in either direction. (*In Senate races, where race polls are taken into account, it assumes a [1.27-point bias in favor of Republicans.](https://fivethirtyeight.com/features/will-the-polls-overestimate-democrats-again/)*)
 
 
 ### Simulation

@@ -1,11 +1,11 @@
 import random
 import statistics
 
-baseNationalEnvironment = 0.8 
+baseNationalEnvironment = -0.68 
 
-historicalAdj = 0.2
+historicalAdjustment = 0.8 
 
-enthusiasmMax = 1.5 
+enthusiasmMax = 2.5 
 
 enthusiasmMin = -4.5
 
@@ -26,7 +26,7 @@ def simNatlEnv(baseEnv):
   error = 0.5 * baseEnv
   errorAdj = random.uniform(-error, error)
 
-  historicalAdj = random.uniform(-0.2, 0.2)
+  historicalAdj = random.uniform(-historicalAdjustment, historicalAdjustment)
   
   enthusiasmAdj = random.uniform(enthusiasmMin, enthusiasmMax)
 
@@ -72,8 +72,8 @@ def simulate(env):
   top = numSeats[int(i-(0.1*i)-1)]
 
   print("H̲o̲u̲s̲e̲")
-  print("Democrats win " + str(int((demWins/(i/100)) + 0.5)) + " in 100 times")
-  print("Republicans win " + str(int((gopWins/(i/100)) + 0.5)) + " in 100 times")
+  print("Democrats win " + str((demWins/(i/100))) + " in 100 times")
+  print("Republicans win " + str((gopWins/(i/100))) + " in 100 times")
   print("Average seats: " + str(average) + "D—" + str(435-average) + "R")
   print("Median seats: " + str(median) + "D—" + str(435-median) + "R")
   print("Mode seats: " + str(mode) + "D—" + str(435-mode) + "R") 
@@ -81,5 +81,6 @@ def simulate(env):
   print("Maximum seats: " + str(max) + "D—" + str(435-max) + "R") 
   print("Top bound: " + str(top) + "D—" + str(435-top) + "R") 
   print("Bottom bound: " + str(bottom) + "D—" + str(435-bottom) + "R") 
+
 
 simulate(baseNationalEnvironment)

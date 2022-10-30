@@ -1,15 +1,15 @@
 import random
 import statistics 
 
-baseNationalEnvironment = 1.08 
+baseNationalEnvironment = 0.44 
 
-historicalAdjustment = 0.8
+historicalAdjustment = 0.2
 
-enthusiasmMax = 2.0 
+enthusiasmMax = 2.5 
 
-enthusiasmMin = -2.0
+enthusiasmMin = -4.5
 
-pvi = [-22.6,-22.6,-20.6,-20,-18.6,-18.6,-18.6,-15.6,-15,-14.6,-13.6,-12.6,-10.75,-10.6,-10.6,-10.15,-6.4,-4.55,-2.2,-1.85,3.05,1.4,2.3,4.6,7.1,8.6,9.25,13.45,9.6,11.4,18.25,15.6,16,16.6,16.6]
+pvi = [-22.6,-20.45,-20.6,-20,-18.6,-18.6,-18.6,-15.6,-15,-14.6,-13.6,-12.6,-10.75,-10.6,-10.6,-9.15,-7.6,-5.3,-3.7,-2.8,1.95,2.3,-0.2,3.4,5.15,8.6,10,12.3,13.45,10.9,15.35,15.6,16,16.6,16.6]
 
 class bcolors:
     HEADER = '\033[95m'
@@ -54,7 +54,7 @@ def simulate(env):
   
   numSeats = []
   
-  i = 100000 
+  i = 100000
 
   for x in range(i):
     result = election(env)
@@ -82,7 +82,6 @@ def simulate(env):
   print("Maximum seats: " + str(max) + "D—" + str(100-max) + "R")
   print("Top bound: " + str(top) + "D—" + str(100-top) + "R")
   print("Bottom bound: " + str(bottom) + "D—" + str(100-bottom) + "R")
-  print(numSeats)
 
 simulate(baseNationalEnvironment)
 
