@@ -20,6 +20,10 @@ Democrats win 54 in 100.
 
 Median outcome: 50D—50R
 
+___
+
+[Complete data](https://docs.google.com/spreadsheets/d/18CSP80JpkXuYXhX5u1iGQfeIt-Fi-lNSpQVz-ffnIPc/edit?usp=sharing)
+
 ## Methodology
 
 ### Elections
