@@ -51,6 +51,12 @@ blueu {
   text-decoration-color: #3e92a3;
 }
 
+blacku {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-decoration-color: #1c2b4a;
+}
+
 header {
   min-height: 50vh;
   display: flex;
@@ -154,7 +160,7 @@ legend {
 
 .graph-container img {
   border: 1px solid #1c2b4a;
-  width: fit-container;
+  width: 90%;
   margin-bottom: 5px;
 }
 

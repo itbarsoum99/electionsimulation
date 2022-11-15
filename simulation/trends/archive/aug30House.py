@@ -1,11 +1,11 @@
 import random
 import statistics
 
-baseNationalEnvironment = 0.755 
+baseNationalEnvironment = 0.278 
 
-historicalAdjustment = 0
+historicalAdjustment = 1.2 
 
-enthusiasmMax = 2.5 
+enthusiasmMax = 0 
 
 enthusiasmMin = -4.5 
 

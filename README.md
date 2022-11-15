@@ -14,11 +14,15 @@ Republicans win 66 in 100.
 
 Median outcome: 211D—224R
 
+<img src="/house.jpeg" style="width:400px"/>
+
 **Senate**
 
 Democrats win 54 in 100.
 
 Median outcome: 50D—50R
+
+<img src="/senate.png" style="width: 400px"/>
 
 ___
 
