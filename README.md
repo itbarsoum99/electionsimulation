@@ -56,9 +56,9 @@ The swing adjustment (<code>swingAdj</code>) assumes that any given election cou
 
 <pre>[(statePVI + statePolls) ÷ 2] + (baseNEnv ± hAdj ± eAdj ± errorAdj) ± incumbencyAdv + swingAdj = election result</pre>
 
-The state PVI (<code>districtPVI</code>) is sourced from [the Cook Political Report](https://www.cookpolitical.com/cook-pvi/2022-partisan-voting-index/state-map-and-list).
+The state PVI (<code>statePVI</code>) is sourced from [the Cook Political Report](https://www.cookpolitical.com/cook-pvi/2022-partisan-voting-index/state-map-and-list).
 
-The state polls (<code>statePolls</code>) is a [running average of polls](https://projects.fivethirtyeight.com/polls/) conducted at a state level in a specific Senate race.
+The state polling (<code>statePolls</code>) is a [running average of polls](https://projects.fivethirtyeight.com/polls/) conducted at a state level in a specific Senate race.
 
 The base national environment (<code>baseNEnv</code>) is from [FiveThirtyEight's generic ballot polling average](https://projects.fivethirtyeight.com/polls/generic-ballot/). The average of the generic ballot from the month before October 25 (2 weeks before Election Day because of [the partisan poll flood](https://www.politico.com/news/2022/11/01/biden-gap-senate-surveys-00064362)) is used here. 
 
