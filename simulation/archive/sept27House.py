@@ -70,6 +70,8 @@ def simulate(env):
   max = numSeats[i-1]
   bottom = numSeats[int(0.1*i)]
   top = numSeats[int(i-(0.1*i)-1)]
+  q1 = numSeats[int(0.25*i)]
+  q3 = numSeats[int(i-(0.25*i)-1)]
 
   print("H̲o̲u̲s̲e̲")
   print("Democrats win " + str((demWins/(i/100))) + " in 100 times")
@@ -81,5 +83,8 @@ def simulate(env):
   print("Maximum seats: " + str(max) + "D—" + str(435-max) + "R") 
   print("Top bound: " + str(top) + "D—" + str(435-top) + "R") 
   print("Bottom bound: " + str(bottom) + "D—" + str(435-bottom) + "R") 
+  print("First quartile: " +str(q1) +"D")
+  print("Third quartile: " +str(q3) +"D")
+
 
 simulate(baseNationalEnvironment)

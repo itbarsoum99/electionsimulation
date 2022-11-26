@@ -1,16 +1,15 @@
 import random
 import statistics 
 
-baseNationalEnvironment = 0.755 
+baseNationalEnvironment = -1.31 
 
-historicalAdjustment = 0
+historicalAdjustment = 1.2 
 
-enthusiasmMax = 2.5 
+enthusiasmMax = 0 
 
 enthusiasmMin = -4.5
 
-
-pvi = [-22.6,-20.45,-20.6,-20,-18.6,-18.6,-18.6,-15.6,-15,-14.6,-13.6,-12.6,-10.3,-10.6,-10.6,-9.15,-7.3,-5.3,-3.85,-2.8,0.15,2.05,2.6,3.7,5.75,12.5,10,12.3,13.3,10.9,15.35,15.6,16,16.6,16.6]
+pvi = [-22.6,-22.6,-20.6,-20,-18.6,-18.6,-18.6,-15.6,-15,-14.6,-13.6,-12.6,-10.6,-10.6,-11.5,-9.2,-5.6,-4.6,-1.95,-2,4,2.85,2.6,6.1,4.95,10.25,13.85,13.95,8.6,9.6,12.6,15.6,16,16.6,16.6]
 
 class bcolors:
     HEADER = '\033[95m'
@@ -76,6 +75,7 @@ def simulate(env):
   q3 = numSeats[int(i-(0.25*i)-1)]
 
 
+
   print("S̲e̲n̲a̲t̲e̲")
   print("Democrats win " + str(int((demWins/(i/100)) + 0.5)) + " in 100 times")
   print("Republicans win " + str(int((gopWins/(i/100)) + 0.5)) + " in 100 times")
@@ -88,6 +88,7 @@ def simulate(env):
   print("Bottom bound: " + str(bottom) + "D—" + str(100-bottom) + "R")
   print("First quartile: " +str(q1) +"D")
   print("Third quartile: " +str(q3) +"D")
+
 
 simulate(baseNationalEnvironment)
 
