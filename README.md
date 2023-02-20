@@ -26,7 +26,7 @@ Median outcome: 50D—50R
 
 ___
 
-[Complete data](https://docs.google.com/spreadsheets/d/18CSP80JpkXuYXhX5u1iGQfeIt-Fi-lNSpQVz-ffnIPc/edit?usp=sharing)
+[Complete data](https://docs.google.com/spreadsheets/d/10d0WfQQy6WOc0zFQch1cn67OD2T2BzkLCRS534bfJM0/edit)
 
 ## Methodology
 
